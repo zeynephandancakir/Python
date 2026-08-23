@@ -43,15 +43,6 @@ Bu depo; problem analizini, kenar durum (edge-case) ayıklamasını ve algoritma
 * **Strateji:** `v1`'deki kısıt doğrulama mantığını (`is_valid`) birebir korur ancak bunu özyinelemeli bir durum-uzayı arama (state-space search) algoritmasıyla sarmalar.
 * **Sonuç:** Bir hücre kilitlenmeyle karşılaştığında fonksiyon `False` döner; bu da çağrı yığınının (call stack) önceki karar durumuna **geri adım atmasına (backtrack)**, geçersiz girdiyi temizlemesine ve eksiksiz geçerli bir çözüm bulunana kadar bir sonraki aday rakamı denemesine olanak tanır.
 
----
-
-##  Nasıl Çalıştırılır
-
-1. Depoyu klonlayın:
-   ```bash
-   git clone [https://github.com/kullanici-adiniz/sudoku-solver.git](https://github.com/kullanici-adiniz/sudoku-solver.git)
-   cd sudoku-solver
-
 ### ENG 
 
 # Algorithmic Sudoku Solver: Constraint Satisfaction & Backtracking Evolution
@@ -97,12 +88,3 @@ v2 : Backtracking Solver (100% Solved Grid):
 ### 2. Version 2: Recursive Backtracking Solver (`v2_backtracking_solver.py`)
 * **Strategy:** Retains the exact constraint validation logic from `v1` (`is_valid`) but wraps it in a recursive state-space search algorithm.
 * **Outcome:** When a cell encounters a deadlock, the function returns `False`, causing the call stack to **backtrack** to the previous decision state, clear the invalid entry, and attempt the next candidate digit until a complete valid solution is found.
-
----
-
-## 🚀 How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/your-username/sudoku-solver.git](https://github.com/your-username/sudoku-solver.git)
-   cd sudoku-solver
